@@ -14,7 +14,7 @@ The Chemical Equation Balancer is a Python application that helps balance chemic
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/T-droid/chemical-equation-balancer.git
+    git clone https://github.com/T-droid/Side-projects.git
     ```
 
 2. Install dependencies:

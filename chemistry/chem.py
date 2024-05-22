@@ -83,13 +83,8 @@ def balance(equation):
     return balancedEquation
 
 def main():
-    st.title("Chemical Equation Balancer")
-
-    reactants = st.text_input(label="Enter Reactants (separated by +):", value="Al2(CO3)3 + H3PO4")
-    products = st.text_input(label="Enter Products (separated by +):", value="AlPO4 + CO2 + H2O")
-
+    equation = st.text_input(label="Enter Chemical Equation: A + B -> AB", value="Al2(CO3)3 + H3PO4 -> AlPO4 + CO2 + H2O")
     if st.button("Balance"):
-        equation = f"{reactants} -> {products}"
         try:
             balanced_eq = balance(equation)
             st.subheader(balanced_eq)
