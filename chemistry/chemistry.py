@@ -83,7 +83,7 @@ def balance(equation):
     return balancedEquation
 
 def main():
-    equation = st.text_input(label="Enter Chemical Equation", value="Al2(CO3)3 + H3PO4 -> AlPO4 + CO2 + H2O")
+    equation = st.text_input(label="Enter Chemical Equation: A + B -> AB", value="Al2(CO3)3 + H3PO4 -> AlPO4 + CO2 + H2O")
     if st.button("Balance"):
         try:
             balanced_eq = balance(equation)
